@@ -2,64 +2,59 @@
 <html lang="en">
 
 <head>
-  <title>George Portfolio | Graphic Designer based in Trikala</title>
   <meta name="description"
     content="Portfolio Website of George Siakavaras graphic designer and art director based in Greece">
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/favivons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
+  <link rel="manifest" href="/favicons/site.webmanifest">
+  <link rel="stylesheet" href="/style.css" />
   <script src="https://kit.fontawesome.com/2d198791b2.js" crossorigin="anonymous"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-
+  <title>Projects</title>
 </head>
 
 <body>
   <!--########################################## NAVBAR ###################################-->
-
-
-  <div>
-    <div class="container">
-      <nav>
-        <div class="hamburger">
-          <div class="line1"></div>
-          <div class="line2"></div>
-          <div class="line3"></div>
-        </div>
-        <ul class="nav-links">
-          <li><a href="#hero">ABOUT</a></li>
-          <li><a href="#projects">PROJECTS</a></li>
-          <li><a href="#contact">CONTACT</a></li>
-        </ul>
-      </nav>
+<div class="container">
+  <nav>
+    <div class="hamburger">
+      <div class="line1"></div>
+      <div class="line2"></div>
+      <div class="line3"></div>
     </div>
+    <ul class="nav-links">
+      <li><a href="/">HOME</a></li>
+      <li><a href="/projects-categories">PROJECTS</a></li>
+      <li><a href="/#contact">CONTACT</a></li>
+    </ul>
+  </nav>
+  
+<div class="vertical__social">
+  <a href="https://www.facebook.com/giorgos.siakavaras.7" class="social"
+    target="_blank">facebook</a>
+  <a href="https://www.instagram.com/geo_siak/?hl=en" class="social" target="_blank">instagram</a>
+  <a href="https://gr.linkedin.com/in/giorgos-siakavaras-98b093152" class="social"
+    target="_blank">linkedin</a>
+</div>
 
-    <div class="vertical__social">
-      <a href="https://www.facebook.com/giorgos.siakavaras.7" class="social"
-        target="_blank">facebook</a>
-      <a href="https://www.instagram.com/geo_siak/?hl=en" class="social" target="_blank">instagram</a>
-      <a href="https://gr.linkedin.com/in/giorgos-siakavaras-98b093152" class="social"
-        target="_blank">linkedin</a>
-    </div>
+<!-- ################################### projects  #####################################-->
 
-    <!-- ################################### projects  #####################################-->
+<section class="projects__categories">
+  <ul>
+    <li class="project__category"><a href="/logofolio">LOGOFOLIO</a></li>
+    <li class="project__category"><a href="/posterfolio">POSTERFOLIO</a></li>
+    <li class="project__category"><a href="/packaging">PACKAGING</a></li>
+    <li class="project__category"><a href="/brand-identity">BRAND IDENTITY</a></li>
+    <li class="project__category"><a href="/illustration">ILLUSTRATION</a></li>
+  </ul>
 
-    <section class="projects__categories">
-      <ul>
-        <li class="project__category"><a href="www.google.com">BRANDING</a></li>
-        <li class="project__category"><a href="#">PACKAGING</a></li>
-        <li class="project__category"><a href="#">WEBSITE</a></li>
-        <li class="project__category"><a href="#">LOGOS</a></li>
-        <li class="project__category"><a href="#">POSTERS</a></li>
-      </ul>
+</section>
 
-    </section>
-
-    <!--############################ contact ###################################-->
-
-  </div>
-
-  <script src="main.js"></script>
+<!--############################ contact ###################################-->
+  <script src="/main.js"></script>
   <script
     src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"
     integrity="sha512-1dalHDkG9EtcOmCnoCjiwQ/HEB5SDNqw8d4G2MKoNwjiwMNeBAkudsBCmSlMnXdsH8Bm0mOd3tl/6nL5y0bMaQ=="
@@ -170,8 +165,32 @@
       );
     }, '+=0.5')
 
+  let articleImage = document.querySelectorAll('.post__image');
+  if(articleImage) {
+   gsap.to(".post__image, .post__gallery-image", {
 
+      opacity:1,
+      duration: 2,
+      stagger: 0.3,
+      ease: "power1.out",
+    });
+  }
 
+  let projectCategories = document.querySelector('.projects__categories')
+  let category = projectCategories.querySelectorAll('.project__category')
+  console.log(category)
+
+  gsap.fromTo('.project__category',{
+        y:100,
+        opacity: 0,
+      },
+      {
+        y:0,
+        opacity: 1,
+        duration: 1,
+        stagger: 0.1,
+      }
+    );
 
   </script>
 </body>

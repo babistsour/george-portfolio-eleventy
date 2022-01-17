@@ -2,36 +2,36 @@
 <html lang="en">
 
 <head>
-  <title>George Portfolio | Graphic Designer based in Trikala</title>
   <meta name="description"
     content="Portfolio Website of George Siakavaras graphic designer and art director based in Greece">
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/favivons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
+  <link rel="manifest" href="/favicons/site.webmanifest">
+  <link rel="stylesheet" href="/style.css" />
   <script src="https://kit.fontawesome.com/2d198791b2.js" crossorigin="anonymous"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-
+  <title>My third Article</title>
 </head>
 
 <body>
   <!--########################################## NAVBAR ###################################-->
-
-
-  <div class="container">
-    <nav>
-      <div class="hamburger">
-        <div class="line1"></div>
-        <div class="line2"></div>
-        <div class="line3"></div>
-      </div>
-      <ul class="nav-links">
-        <li><a href="#hero">ABOUT</a></li>
-        <li><a href="#projects">PROJECTS</a></li>
-        <li><a href="#contact">CONTACT</a></li>
-      </ul>
-    </nav>
-    <div class="vertical__social">
+<div class="container">
+  <nav>
+    <div class="hamburger">
+      <div class="line1"></div>
+      <div class="line2"></div>
+      <div class="line3"></div>
+    </div>
+    <ul class="nav-links">
+      <li><a href="/">HOME</a></li>
+      <li><a href="/projects-categories">PROJECTS</a></li>
+      <li><a href="/#contact">CONTACT</a></li>
+    </ul>
+  </nav>
+      <div class="vertical__social">
       <a href="https://www.facebook.com/giorgos.siakavaras.7" class="social"
         target="_blank">facebook</a>
       <a href="https://www.instagram.com/geo_siak/?hl=en" class="social"
@@ -43,17 +43,13 @@
     <section class="post-container">
       <div class="post">
         <div class="post__image">
-          <img src="images/104116227_10218091295062420_3676999121591263631_o.jpg"
-            alt="project1" />
+          <img src="/images/project-1.jpg"
+            alt="This is a test" />
         </div>
         <div class="post__description perigrafi">
-          <h4 class="post__category">Branding</h4>
-          <h3 class="post__title">Κεφίρ</h3>
-          <p class="post__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.Blanditiis,
-            qui.Lorem ipsum dolor sit amet, consectetur adipisicing elit.Blanditiis, qui.Lorem ipsum
-            dolor sit amet, consectetur adipisicing elit.Blanditiis, qui.Lorem ipsum dolor sit amet,
-            consectetur adipisicing elit.Blanditiis, qui.Lorem ipsum dolor sit amet, consectetur
-            adipisicing elit.Blanditiis, qui.</p>
+          <h4 class="post__category">Packaging</h4>
+          <h3 class="post__title">My third Article</h3>
+          <p class="post__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis accusantium sit illo neque rem omnis quaerat, nam similique vitae delectus ad magni vel quo maxime, magnam placeat. Reprehenderit, distinctio aliquam?</p>
         </div>
       </div>
       <div class="post">
@@ -68,25 +64,32 @@
             elit.Blanditiis, qui.</p>
         </div>
         <div class="post__image">
-          <img src="images/104116227_10218091295062420_3676999121591263631_o.jpg"
+          <img src="/images/project-1.jpg"
             alt="project1" />
         </div>
       </div>
       <section class="post__gallery">
         <div class="post__gallery-image">
-          <img src="images/104116227_10218091295062420_3676999121591263631_o.jpg"
+          <img src="/images/project-1.jpg"
             alt="project1" />
         </div>
         <div class="post__gallery-image">
-          <img src="images/104116227_10218091295062420_3676999121591263631_o.jpg"
+          <img src="/images/project-1.jpg"
             alt="project1" />
         </div>
       </section>
+      <div class="post__gallery-image">
+          <img src="/images/project-1.jpg"
+            alt="project1" />
+        </div>
+
+
 
     </section>
-  </div>
 
-  <script src="main.js"></script>
+
+
+  <script src="/main.js"></script>
   <script
     src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"
     integrity="sha512-1dalHDkG9EtcOmCnoCjiwQ/HEB5SDNqw8d4G2MKoNwjiwMNeBAkudsBCmSlMnXdsH8Bm0mOd3tl/6nL5y0bMaQ=="
@@ -170,7 +173,7 @@
 
 
         },
-        xPercent: 5,
+        xPercent: -5,
 
         opacity: 0,
         duration: 2,
@@ -197,8 +200,32 @@
       );
     }, '+=0.5')
 
+  let articleImage = document.querySelectorAll('.post__image');
+  if(articleImage) {
+   gsap.to(".post__image, .post__gallery-image", {
 
+      opacity:1,
+      duration: 2,
+      stagger: 0.3,
+      ease: "power1.out",
+    });
+  }
 
+  let projectCategories = document.querySelector('.projects__categories')
+  let category = projectCategories.querySelectorAll('.project__category')
+  console.log(category)
+
+  gsap.fromTo('.project__category',{
+        y:100,
+        opacity: 0,
+      },
+      {
+        y:0,
+        opacity: 1,
+        duration: 1,
+        stagger: 0.1,
+      }
+    );
 
   </script>
 </body>

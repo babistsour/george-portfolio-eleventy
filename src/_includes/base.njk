@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="description"
+    content="Portfolio Website of George Siakavaras graphic designer and art director based in Greece">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/favivons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
+  <link rel="manifest" href="/favicons/site.webmanifest">
+  <link rel="stylesheet" href="/style.css" />
+  <script src="https://kit.fontawesome.com/2d198791b2.js" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <title>{{ title }}</title>
+</head>
+
+<body>
+  {% include 'header.njk' %}
+  {{ content | safe }}
+  <script src="/main.js"></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"
+    integrity="sha512-1dalHDkG9EtcOmCnoCjiwQ/HEB5SDNqw8d4G2MKoNwjiwMNeBAkudsBCmSlMnXdsH8Bm0mOd3tl/6nL5y0bMaQ=="
+    crossorigin="anonymous"></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollTrigger.js"
+    integrity="sha512-aFeKJduB8P/AbrNBl0SQOu5kyYjwrboPfouTkiQ8Wr8H3kmcO1W94KPlrgG/otCFwA0b2fNyBbEH0AJQDf1erQ=="
+    crossorigin="anonymous"></script>
+
+  <!-- ####################################  aniimations ############################ -->
+  <script>
+    var tl = gsap.timeline();
+    gsap.registerPlugin(ScrollTrigger);
+
+    tl.to(" .text", { y: 0, duration: 1, stagger: 0.2 });
+
+
+    tl.fromTo(
+      ".content",
+
+      {
+        opacity: 0,
+      },
+      {
+        opacity: 1,
+        duration: 1.2,
+        stagger: 0.5,
+      }
+    );
+
+
+
+
+    gsap.to(".yolo", {
+      scrollTrigger: ".yolo", // start the animation when ".box" enters the viewport (once)
+      y: 0,
+      duration: 1,
+      stagger: 0.3,
+      ease: "power1.out",
+    });
+
+
+
+    gsap.utils.toArray('figure').forEach(figure => {
+      gsap.from(figure, {
+
+        scrollTrigger: {
+          trigger: figure,
+          start: "top 50%",
+          ease: "power1.out",
+
+
+        },
+        x: "100%",
+
+        opacity: 0,
+        duration: 1.2,
+        stagger: 1
+      }
+      );
+    })
+
+    gsap.utils.toArray(".line").forEach(line => {
+      gsap.to(line, {
+        scrollTrigger: {
+          trigger: line,
+          ease: "power1.out"
+        },
+        width: "100%",
+        duration: 2.5
+      })
+    });
+
+    gsap.utils.toArray('.perigrafi').forEach(perigrafi => {
+      gsap.from(perigrafi, {
+
+        scrollTrigger: {
+          trigger: perigrafi,
+
+          ease: "power1.out",
+
+
+        },
+        xPercent: -5,
+
+        opacity: 0,
+        duration: 2,
+        stagger: 1.6
+      }
+      );
+    }, '+=0.5')
+
+    gsap.utils.toArray('.number').forEach(project => {
+      gsap.to(project, {
+
+        scrollTrigger: {
+          trigger: project,
+          delay: 1,
+          ease: "power1.out",
+
+
+        },
+        y: '0%',
+
+        duration: 1,
+
+      }
+      );
+    }, '+=0.5')
+
+  let articleImage = document.querySelectorAll('.post__image');
+  if(articleImage) {
+   gsap.to(".post__image, .post__gallery-image", {
+
+      opacity:1,
+      duration: 2,
+      stagger: 0.3,
+      ease: "power1.out",
+    });
+  }
+
+  let projectCategories = document.querySelector('.projects__categories')
+  let category = projectCategories.querySelectorAll('.project__category')
+  console.log(category)
+
+  gsap.fromTo('.project__category',{
+        y:100,
+        opacity: 0,
+      },
+      {
+        y:0,
+        opacity: 1,
+        duration: 1,
+        stagger: 0.1,
+      }
+    );
+
+  </script>
+</body>
+
+</html>
