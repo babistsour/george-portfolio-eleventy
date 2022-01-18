@@ -166,19 +166,21 @@
 
   let projectCategories = document.querySelector('.projects__categories')
   let category = projectCategories.querySelectorAll('.project__category')
-  console.log(category)
-
-  gsap.fromTo('.project__category',{
-        y:100,
-        opacity: 0,
-      },
+  if(category) {
+     gsap.fromTo('.project__category', {
+      y: 100,
+      opacity: 0,
+    },
       {
-        y:0,
+        y: 0,
         opacity: 1,
         duration: 1,
         stagger: 0.1,
       }
     );
+  }
+
+
 
   </script>
 </body>
