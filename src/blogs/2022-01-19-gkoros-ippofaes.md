@@ -8,7 +8,7 @@ description: "Widgets are specified as collection fields in the Netlify CMS
   the login button and the CMS will open.) You can refer to the demo
   configuration code to see how each field was configured."
 category: Packaging
-number: 4
+number: "04"
 date: 2022-01-19T05:36:20.247Z
 tags:
   - post
