@@ -11,6 +11,7 @@
   <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
   <link rel="manifest" href="/favicons/site.webmanifest">
   <link rel="stylesheet" href="/style.css" />
+  <script defer src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
   <script src="https://kit.fontawesome.com/2d198791b2.js" crossorigin="anonymous"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <title>Blog</title>
@@ -200,6 +201,17 @@
 
 
 
+  </script>
+  <script>
+    if (window.netlifyIdentity) {
+      window.netlifyIdentity.on("init", user => {
+        if (!user) {
+          window.netlifyIdentity.on("login", () => {
+            document.location.href = "/admin/";
+          });
+        }
+      });
+    }
   </script>
 </body>
 
