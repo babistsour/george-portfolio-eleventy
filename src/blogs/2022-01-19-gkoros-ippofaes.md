@@ -24,9 +24,7 @@ Widgets are specified as collection fields in the Netlify CMS `config.yml` fil
 
 To see working examples of all of the built-in widgets, try making a 'Kitchen Sink' collection item on the [CMS demo site](https://cms-demo.netlify.com/). (No login required: click the login button and the CMS will open.) You can refer to the demo [configuration code](https://github.com/netlify/netlify-cms/blob/master/dev-test/config.yml) to see how each field was configured.
 
-
-
-![](/images/92005213_10217352908643221_9026553395284017152_o.jpg)
+![wfwf](/images/92005213_10217352908643221_9026553395284017152_o.jpg "wfwfwf")
 
 #### Ippofaes
 
@@ -37,7 +35,5 @@ If you want your components to be able to be themed externally (e.g. from a them
 A component partial can include component-specific variables, placeholders, and even mixins and functions. Keep in mind, though, that you should avoid referencing (i.e. `@import`-ing) component files from other component files, as this can make your project’s dependency graph an unmaintainable tangled mess.
 
 <!--EndFragment-->
-
-
 
 <!--EndFragment-->
