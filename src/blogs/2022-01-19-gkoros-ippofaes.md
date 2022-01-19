@@ -1,5 +1,5 @@
 ---
-title: Gkoros Ippofaes
+title: Ippofaes
 description: "Widgets are specified as collection fields in the Netlify CMS
   config.yml file. Note that YAML syntax allows lists and objects to be written
   in block or inline style, and the code samples below include a mix of
