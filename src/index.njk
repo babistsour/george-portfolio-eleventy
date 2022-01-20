@@ -49,12 +49,12 @@ layout: 'base.njk'
   </h1>
   <div class="line"></div>
   <div class="figures__container">
-    {%- for post in collections.post -%}
+    {%- for post in collections.selected | reverse -%}
     <a href="{{ post.url }}">
       <div class="figure">
         <h1 class="project__number"><span class="number">{{ post.data.number }}/</span></h1>
         <div class="description perigrafi">
-          <h4 class="post__category" style="text-transform:uppercase;">{{post.data.category}}</h4>
+          <h4 class="post__category">{{post.data.category}}</h4>
           <h3 class="perigrafi">{{ post.data.title }}</h3>
           <p class="perigrafi">{{ post.data.description }}</p>
 
@@ -101,4 +101,5 @@ layout: 'base.njk'
       </div>
     </div>
   </div>
+  {% include 'handcraft.njk' %}
 </section>
