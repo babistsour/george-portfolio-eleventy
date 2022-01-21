@@ -6,7 +6,7 @@ number: "2"
 date: 2022-01-21T20:18:31.479Z
 tags:
   - post
-  - logofolios
+  - logofolio
   - selected
 image: /images/zeblo-01.jpg
 imageAlt: Zeblo CAfe
