@@ -10,7 +10,7 @@ layout: 'base.njk'
   </h1>
   <div class="line"></div>
   <div class="figures__container">
-    {%- for post in collections.illustration -%}
+    {%- for post in collections.illustration | sortByNum -%}
     <a href="{{ post.url }}">
     <div class="figure">
 
