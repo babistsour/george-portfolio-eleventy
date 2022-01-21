@@ -1004,11 +1004,25 @@ figcaption h3 {
 .post {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  gap: 3rem;
+  align-items: space-around;
   margin-bottom: 3rem;
-  height: 100%;
+  gap: 3rem;
+  height: calc(100vh - 4rem);
   position: relative;
+}
+
+.post__description {
+  margin-top:3rem;
+  width: 50%;
+}
+
+
+.post__category {
+  font-weight: normal;
+}
+
+.post__title {
+  font-family: var(--ff-title);
 }
 
 .post-container {
@@ -1035,20 +1049,15 @@ figcaption h3 {
 }
 
 .post-container .post__content {
-  max-width: 75%;
+  /* max-width: 75%; */
   margin: 0 auto;
- 
+
 }
 
 
-.post__description {
-  color: var(--clr-text-primary);
-  visibility: visible;
-  width: 50%;
-  height: auto;
-}
 
-.post__description h3 {
+
+.post__title  {
   font-family: var(--ff-title);
   font-size: 3vw;
   line-height: 1.2;
