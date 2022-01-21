@@ -744,6 +744,10 @@ figcaption h3 {
     transform: translateY(100%);
   }
 
+  .perigrafi {
+    opacity: 1
+  }
+
   .description {
     position: absolute;
     bottom: 10%;

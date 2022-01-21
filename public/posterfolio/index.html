@@ -39,29 +39,11 @@
     <span class="yolo">Posterfolio</span>
   </h1>
   <div class="line"></div>
-  <div class="figures__container"><a href="/blogs/second-post/">
-    <div class="figure">
-
-      <div class="description perigrafi">
-        <h4 class="post__category">Posterfolio</h4>
-        <h3 class="perigrafi">My Second Article</h3>
-        <p class="perigrafi">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis accusantium sit illo neque rem omnis quaerat, nam similique vitae delectus ad magni vel quo maxime, magnam placeat. Reprehenderit, distinctio aliquam?</p>
-      </div>
-      <figure>
-        <img src="/images/project-2.jpg" alt="This is a test" />
-        <figcaption>
-          <h3>My Second Article</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis accusantium sit illo neque rem omnis quaerat, nam similique vitae delectus ad magni vel quo maxime, magnam placeat. Reprehenderit, distinctio aliquam?</p>
-          <img />
-        </figcaption>
-      </figure>
-    </div>
-    </a>
-    <div class="line"></div></div>
+  <div class="figures__container"></div>
 </section>
     
 
-  
+
   <script src="/main.js"></script>
   <script
     src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"
@@ -153,8 +135,7 @@
         stagger: 1.6
       }
       );
-    }, '+=0.5')
-
+    }, '+=0.5') 
     gsap.utils.toArray('.number').forEach(project => {
       gsap.to(project, {
 

@@ -39,47 +39,11 @@
     <span class="yolo">Logofolio</span>
   </h1>
   <div class="line"></div>
-  <div class="figures__container"><a href="/blogs/first-post/">
-    <div class="figure">
-
-      <div class="description perigrafi">
-        <h4 class="post__category">Logofolio</h4>
-        <h3 class="perigrafi">My First Article</h3>
-        <p class="perigrafi">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis accusantium sit illo neque rem omnis quaerat, nam similique vitae delectus ad magni vel quo maxime, magnam placeat. Reprehenderit, distinctio aliquam?</p>
-      </div>
-      <figure>
-        <img src="/images/project-3.jpg" alt="This is a test" />
-        <figcaption>
-          <h3>My First Article</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis accusantium sit illo neque rem omnis quaerat, nam similique vitae delectus ad magni vel quo maxime, magnam placeat. Reprehenderit, distinctio aliquam?</p>
-          <img />
-        </figcaption>
-      </figure>
-    </div>
-    </a>
-    <div class="line"></div><a href="/blogs/2022-01-19-cafe/">
-    <div class="figure">
-
-      <div class="description perigrafi">
-        <h4 class="post__category">Logofolio</h4>
-        <h3 class="perigrafi">Cafe</h3>
-        <p class="perigrafi">Cafe</p>
-      </div>
-      <figure>
-        <img src="/images/64544671_10215030766151110_2182880771293839360_o.jpg" alt="cafe" />
-        <figcaption>
-          <h3>Cafe</h3>
-          <p>Cafe</p>
-          <img />
-        </figcaption>
-      </figure>
-    </div>
-    </a>
-    <div class="line"></div></div>
+  <div class="figures__container"></div>
 </section>
     
 
-  
+
   <script src="/main.js"></script>
   <script
     src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"
@@ -171,8 +135,7 @@
         stagger: 1.6
       }
       );
-    }, '+=0.5')
-
+    }, '+=0.5') 
     gsap.utils.toArray('.number').forEach(project => {
       gsap.to(project, {
 
