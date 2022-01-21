@@ -10,6 +10,6 @@ tags:
 image: /images/zeblo-01.jpg
 imageAlt: Zeblo CAfe
 ---
-> ![](/images/zeblo-03.jpg)
+> ![]()
 >
-> ![](/images/zeblo-02.jpg)
+> ![]()
