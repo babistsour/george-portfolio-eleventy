@@ -18,11 +18,14 @@ layout: 'base.njk'
         </div>
         <div class="post__description perigrafi">
           <h4 class="post__category">{{category}}</h4>
-          <h3 class="post__title">{{title}}</h3>
+          <h3 class="post__title">{{ title }}</h3>
           <p class="post__text">{{ description }}</p>
+
         </div>
+
       </div>
       <div class="post__content">{{ content | safe }}</div>
+
       {# <div class="post">
         <div class="post__description perigrafi">
           <h3 class="post__title">Κεφίρ</h3>

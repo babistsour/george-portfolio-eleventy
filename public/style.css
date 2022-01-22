@@ -1007,8 +1007,8 @@ figcaption h3 {
 
 .post {
   display: flex;
-  justify-content: space-between;
-  align-items: space-around;
+  /* justify-content: space-between; */
+  align-items: center;
   margin-bottom: 3rem;
   gap: 3rem;
   height: calc(100vh - 4rem);
@@ -1016,8 +1016,8 @@ figcaption h3 {
 }
 
 .post__description {
-  margin-top:3rem;
-  width: 50%;
+  /* margin-top:3rem; */
+  width: 40%;
 }
 
 
@@ -1047,9 +1047,12 @@ figcaption h3 {
 .post__content h1,
 .post__content h2,
 .post__content h3,
-.post__content h4 {
-  text-align: center;
+.post__content h4,
+.post__content p {
   margin: 4rem 0;
+  width: 50%;
+  text-align: left;
+
 }
 
 .post-container .post__content {
@@ -1082,7 +1085,13 @@ figcaption h3 {
 .post__image {
   opacity: 0;
   width: 50%;
-  height: auto;
+  height: 100%;
+}
+
+.post__image img {
+  height:100%;
+  object-fit: cover;
+
 }
 
 .post__gallery {
