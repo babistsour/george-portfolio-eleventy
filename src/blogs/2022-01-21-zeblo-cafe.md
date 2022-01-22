@@ -10,11 +10,14 @@ tags:
   - logofolio
   - selected
   - brand-identity
+  - packaging
 image: /images/zeblo-03.jpg
 imageAlt: Zeblo CAfe
 ---
 # Here is the logo for Coffee shop Zeblo, located in Athens, Greece. Orestis, the owner of the coffee shop, trusted me to make hiw brand identity. Me and Thanasis, co partner, made some draft logos and finally we made our decision to show Orestis this logo based on his favorite animal. He loved it and his costumers were surprised by this idea. We are happy to be part of it. :-P
 
-![](/images/zeblo-01.jpg)
+![](/images/zeblo-draft-logos-newnewτελ-01.jpg)
 
-![](/images/zeblo-02.jpg)
+## Packaging Design for TakeAway. The design was created by using the brand name Zeblo and designing an interesting pattern.
+
+![Packaging design for take away](/images/dsfgsd.jpg)
