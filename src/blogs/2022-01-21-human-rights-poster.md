@@ -6,7 +6,7 @@ title: Human Rights Poster
 description: “Get up, stand up, Stand up for your rights. Get up, stand up,
   Don't give up the fight.” Bob Marley, Jamaican singer
 category: POSTERFOLIO
-string: "1"
+string: "50000"
 date: 2022-01-21T21:19:59.523Z
 tags:
   - post
