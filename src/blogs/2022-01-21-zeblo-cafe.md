@@ -9,7 +9,7 @@ tags:
   - post
   - logofolio
   - selected
-  - brandidentity
+  - brand-identity
 image: /images/zeblo-03.jpg
 imageAlt: Zeblo CAfe
 ---
