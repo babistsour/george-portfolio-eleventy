@@ -17,6 +17,6 @@ imageAlt: Zeblo CAfe
 
 ![](/images/zeblo-draft-logos-newnewτελ-01.jpg)
 
-
+## Packaging Design for TakeAway. The design was designed by using the brand name Zeblo and creating an interesting pattern.
 
 ![Packaging design for take away](/images/dsfgsd.jpg)
