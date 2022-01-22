@@ -10,6 +10,7 @@ tags:
   - logofolio
   - selected
   - brand-identity
+  - packaging
 image: /images/zeblo-03.jpg
 imageAlt: Zeblo CAfe
 ---
