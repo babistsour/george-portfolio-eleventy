@@ -1,5 +1,5 @@
 ---
-title: ZEBLO CAFE
+title: "ZEBLO "
 description: Brand identity / Logo design for the Coffee Shop Zeblo Cafe "The Original"
 category: Logofolio
 number: "3"
