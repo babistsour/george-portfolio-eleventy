@@ -1050,13 +1050,16 @@ figcaption h3 {
 .post__content h4,
 .post__content p {
   margin: 4rem 0;
-  width: 50%;
+  width: 100%;
   text-align: left;
 
 }
 
 .post-container .post__content {
   /* max-width: 75%; */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
   margin: 0 auto;
 
 }
