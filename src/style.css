@@ -883,9 +883,10 @@ figcaption h3 {
     position: relative;
   }
 
-  figure img {
+  .figure figure img {
     /* height: 860px; */
     width: 860px;
+    object-fit: cover;
     aspect-ratio: 1;
   }
 
