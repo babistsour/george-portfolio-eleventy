@@ -883,6 +883,12 @@ figcaption h3 {
     position: relative;
   }
 
+  figure img {
+    /* height: 860px; */
+    width: 860px;
+    aspect-ratio: 1;
+  }
+
   .figure:hover {
     -webkit-filter: grayscale(0%);
     filter: grayscale(0%);
