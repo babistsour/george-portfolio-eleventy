@@ -252,7 +252,8 @@ li.fade {
 
 .content p {
   font-size: 1.1rem;
-  font-family: var(--ff-text);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
+      "Open Sans", "Helvetica Neue", sans-serif;
   font-weight: 100;
   color: var(--clr-text-primary);
   text-align: center;
@@ -431,8 +432,176 @@ figcaption h3 {
   margin-right: 0.5rem;
 }
 
-/*  #####################################################( MEDIA QUERIES ) ################################################ */
+.projects__categories {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  width: 90%;
+  height: 90vh;
+}
 
+.project__category {
+  display: table;
+  position: relative;
+  font-size: 5vw;
+  color: var(--clr-secondary);
+  line-height: 1.2;
+}
+
+.project__category::before {
+  transform: scaleX(0);
+  transform-origin: bottom right;
+}
+
+.project__category:hover::before {
+  transform:scaleX(1);
+  transform-origin: bottom left;
+}
+
+.project__category::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  inset: 0 0 0 0;
+  background: var(--clr-third);
+  z-index: -1;
+  transition: transform .5s ease;
+}
+
+
+
+.post {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 3rem;
+  gap: 3rem;
+  height: calc(100vh - 4rem);
+  position: relative;
+}
+
+.post__description {
+  /* margin-top:3rem; */
+  width: 90%;
+}
+
+
+.post__category {
+  font-weight: normal;
+}
+
+.post__title {
+  font-family: var(--ff-title);
+}
+
+.post-container {
+
+}
+
+.post-container p {
+
+   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
+    "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 100;
+  font-size: 1.5rem;
+  margin-top: 1.5rem;
+  letter-spacing: 0;
+  line-height: 1.3;
+}
+
+.post__content h1,
+.post__content h2,
+.post__content h3,
+.post__content h4,
+.post__content p {
+  margin: 4rem 0;
+  padding:2rem;
+  width: 100%;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
+      "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 100;
+  text-align: left;
+
+}
+
+.post-container .post__content {
+  /* max-width: 75%; */
+  display: grid;
+  grid-template-columns: repeat( auto-fit, minmax(1fr) );
+  align-items: center;
+  margin: 0 auto;
+
+}
+
+
+
+
+.post__title  {
+  font-family: var(--ff-title);
+  font-size: 3vw;
+  line-height: 1.2;
+  padding-bottom: 0;
+  position: relative;
+}
+
+.post__description p {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
+      "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 100;
+  font-size: 1.5rem;
+  margin-top: 1.5rem;
+  letter-spacing: 0;
+  line-height: 1.3;
+}
+
+.post__image {
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.post__image img {
+  height:100%;
+  object-fit: cover;
+
+}
+
+.post__gallery {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 3rem;
+}
+
+.post__gallery-image {
+  opacity: 0;
+  width: 49%;
+}
+
+::selection {
+  color:rgb(235, 217, 114);
+  background-color:rgb(0, 0, 0)
+}
+
+.handcraft {
+
+  text-align: center;
+  margin-top: 1.5rem;
+  padding:0.5rem;
+  color: var(--clr-secondary);
+  font-family: var(--ff-title);
+
+
+}
+
+.handcraft a {
+  font-weight:00;
+  color: var(--clr-text-secondary);
+}
+
+/*  #####################################################( MEDIA QUERIES ) ################################################ */
+/* ############################################################################################################################### */
 @media screen and (min-width: 785px) {
 
   .container {
@@ -780,7 +949,7 @@ figcaption h3 {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
       "Open Sans", "Helvetica Neue", sans-serif;
     font-weight: 100;
-    font-size: 1.2vw;
+    font-size: 1.5rem;
     width: 60%;
     margin-top: 1.5rem;
     letter-spacing: 0;
@@ -961,11 +1130,8 @@ figcaption h3 {
       transform: translate(-10%, 10%);
     }
   }
-}
 
-/*                    styles fot categories page                  */
-
-.projects__categories {
+  .projects__categories {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1007,6 +1173,7 @@ figcaption h3 {
 
 .post {
   display: flex;
+  flex-direction: row;
   /* justify-content: space-between; */
   align-items: center;
   margin-bottom: 3rem;
@@ -1038,7 +1205,7 @@ figcaption h3 {
    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
     "Open Sans", "Helvetica Neue", sans-serif;
   font-weight: 100;
-  font-size: 1.2vw;
+  font-size: 1.5rem;
   margin-top: 1.5rem;
   letter-spacing: 0;
   line-height: 1.3;
@@ -1050,7 +1217,12 @@ figcaption h3 {
 .post__content h4,
 .post__content p {
   margin: 4rem 0;
+  padding:2rem;
   width: 100%;
+  font-size: 1.5rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
+      "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 100;
   text-align: left;
 
 }
@@ -1077,9 +1249,9 @@ figcaption h3 {
 
 .post__description p {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
-    "Open Sans", "Helvetica Neue", sans-serif;
+      "Open Sans", "Helvetica Neue", sans-serif;
   font-weight: 100;
-  font-size: 1.2vw;
+  font-size: 1.5rem;
   margin-top: 1.5rem;
   letter-spacing: 0;
   line-height: 1.3;
@@ -1128,3 +1300,7 @@ figcaption h3 {
   font-weight:00;
   color: var(--clr-text-secondary);
 }
+}
+
+/*                    styles fot categories page                  */
+
