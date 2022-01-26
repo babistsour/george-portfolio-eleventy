@@ -276,7 +276,9 @@
 
   <!-- ####################################  aniimations ############################ -->
   <script>
-    var tl = gsap.timeline();
+  if(window.innerWidth > 600) {
+    console.log("mobile")
+     var tl = gsap.timeline();
     gsap.registerPlugin(ScrollTrigger);
 
     tl.to(" .text", { y: 0, duration: 1, stagger: 0.2 });
@@ -399,6 +401,8 @@
         stagger: 0.1,
       }
     );
+  }
+
   }
 
 
