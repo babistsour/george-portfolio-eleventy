@@ -7,7 +7,6 @@ order: "10"
 date: 2022-01-22T20:12:54.174Z
 tags:
   - post
-  - selected
   - posterfolio
 image: /images/poster-mockup.jpg
 imageAlt: aliens_made_me_do_it
