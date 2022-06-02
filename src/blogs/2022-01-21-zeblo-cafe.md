@@ -2,8 +2,8 @@
 title: "ZEBLO "
 description: Brand identity / Logo design for the Coffee Shop Zeblo Cafe "The Original"
 category: Logofolio - Brand-identity - Packaging
-number: "07"
-order: "07"
+number: "08"
+order: "08"
 date: 2022-01-21T20:18:31.479Z
 tags:
   - post
