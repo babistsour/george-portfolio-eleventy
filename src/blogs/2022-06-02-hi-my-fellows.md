@@ -8,6 +8,7 @@ date: 2022-06-02T22:50:19.780Z
 tags:
   - post
   - posterfolio
+  - selected
 image: /images/ezgif.gif
 imageAlt: everydayness moods
 ---
