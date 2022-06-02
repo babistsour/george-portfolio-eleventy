@@ -1,10 +1,10 @@
 ---
-title: HALF MARATHON '22
+title: HALF MARATHON '22 CAMPAIGN
 description: Poster design for the Half-Marathon Kalabaka-Trikala "Thanassis
   Stamopoulos" 2022
 category: Posterfolio
-number: "01"
-order: "01"
+number: "03"
+order: "03"
 date: 2022-02-18T19:55:04.146Z
 tags:
   - post
