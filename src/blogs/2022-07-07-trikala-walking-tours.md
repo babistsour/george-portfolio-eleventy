@@ -1,6 +1,6 @@
 ---
 title: TRIKALA WALKING TOURS
-description: Brand identity for a tourist agency based in Trikala, Thessaly
+description: Brand identity for a travel guide agency based in Trikala, Thessaly
 category: Logofolio
 number: "03"
 order: "03"
