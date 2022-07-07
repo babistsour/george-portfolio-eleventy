@@ -8,7 +8,6 @@ order: "03"
 date: 2022-02-18T19:55:04.146Z
 tags:
   - post
-  - selected
   - posterfolio
 image: /images/2502841.jpg
 imageAlt: poster design
